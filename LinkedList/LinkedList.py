@@ -179,36 +179,35 @@ class LinkedList:
 
 
 
+if __name__ == "__main__":
+    my_linked_list = LinkedList(1)
+    my_linked_list.append(2)
+    my_linked_list.append(3)
+    my_linked_list.append(4)
+
+    print('LL before reverse():')
+    my_linked_list.print_list()
+
+    my_linked_list.reverse()
+
+    print('\nLL after reverse():')
+    my_linked_list.print_list()
 
 
-my_linked_list = LinkedList(1)
-my_linked_list.append(2)
-my_linked_list.append(3)
-my_linked_list.append(4)
 
-print('LL before reverse():')
-my_linked_list.print_list()
+    """
+        EXPECTED OUTPUT:
+        ----------------
+        LL before reverse():
+        1
+        2
+        3
+        4
 
-my_linked_list.reverse()
-
-print('\nLL after reverse():')
-my_linked_list.print_list()
-
-
-
-"""
-    EXPECTED OUTPUT:
-    ----------------
-    LL before reverse():
-    1
-    2
-    3
-    4
-
-    LL after reverse():
-    4
-    3
-    2
-    1
-    
-"""
+        LL after reverse():
+        4
+        3
+        2
+        1
+        
+    """
