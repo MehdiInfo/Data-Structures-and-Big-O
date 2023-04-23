@@ -5,3 +5,4 @@ A quick reminder on data structures and some sorting and graphs algorithms using
 * Classes and Pointers
 * LinkedList Data structure and it's useful methods
 * DoublyLinkedList
+* Stack and Queue
