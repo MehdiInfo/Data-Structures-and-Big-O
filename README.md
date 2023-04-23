@@ -6,3 +6,4 @@ A quick reminder on data structures and some sorting and graphs algorithms using
 * LinkedList Data structure and it's useful methods
 * DoublyLinkedList
 * Stack and Queue
+* Binary Research Trees
