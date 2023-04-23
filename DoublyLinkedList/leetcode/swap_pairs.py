@@ -6,17 +6,18 @@ class Node:
         
 
 class DoublyLinkedList:
+    # O(1)
     def __init__(self, value):
         new_node = Node(value)
         self.head = new_node
         self.length = 1
-
+    # O(n)
     def print_list(self):
         temp = self.head
         while temp is not None:
             print(temp.value)
             temp = temp.next
-        
+    # O(n)
     def append(self, value):
         new_node = Node(value)
         if self.head is None:
@@ -29,15 +30,14 @@ class DoublyLinkedList:
             new_node.prev = temp
         self.length += 1
         return True
+    
     # O(n)
     def swap_pairs(self):
         if self.length > 0:
             node1 = self.head
             node2 = self.head.next
             self.head = node2
-            print("-----------")
             while node1 is not None and node2 is not None:
-                
                 node1.next = node2.next
                 tmp = node1.prev
                 node1.prev = node2
@@ -50,8 +50,6 @@ class DoublyLinkedList:
                 node1 = node1.next
                 if node1 is not None:
                     node2 = node1.next
-
-                
 
 
 
